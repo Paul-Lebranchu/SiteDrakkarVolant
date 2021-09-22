@@ -1,0 +1,59 @@
+/*gestion des images de fond des trois parties*/
+#eco{
+	margin:20px;
+	background-image:url("img/Picto-boracay-feuille-01.png");
+	background-repeat:no-repeat;
+	background-attachment:local;
+	background-position:center;
+	background-size:25%;
+	
+}
+
+#sport{
+	margin:20px;
+	background-image:url("img/barbell-512.png");
+	background-repeat:no-repeat;
+	background-attachment:local;
+	background-position:center;
+	background-size:25%;
+	
+}
+
+#mental{
+	margin:20px;
+	background-image:url("img/yoga.png");
+	background-repeat:no-repeat;
+	background-attachment:local;
+	background-position:center;
+	background-size:25%;
+}
+
+/*formt téléphone*/
+@media (max-width: 400px) {
+	#eco{
+	
+	background-image:url("img/Picto-boracay-feuille-01.png");
+	background-repeat:no-repeat;
+	background-attachment:local;
+	background-position:center;
+	background-size:75%;
+	}
+	
+	#sport{
+	background-image:url("img/barbell-512.png");
+	background-repeat:no-repeat;
+	background-attachment:local;
+	background-position:center;
+	background-size:75%;
+	}
+	
+	#mental{
+	background-image:url("img/yoga.png");
+	background-repeat:no-repeat;
+	background-attachment:local;
+	background-position:center;
+	background-size:75%;
+	}
+	
+	
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<title> Pimp My drakkar  </title>
+		<link rel="stylesheet" media="screen" href="../../styles/cssCommun.css" />
+	</head>
+	
+	<body>
+		<header>
+			<!-- logo -->
+			<figure>
+					<img src="../../images/logo_DrakkarintheSky.png" alt="logo du site" >
+			</figure>
+			
+			<!-- menu -->
+			<nav id="cadreMenu" >
+				
+			
+				<menu>
+					<li> <a href="../../index.html">accueil</a> </li>
+					<li> <a href="../../pages/evolDrakkar/evolDrakkar.html">histoire des drakkars </a> </li>
+					<li> <a href="../../pages/fonctionnement/fonctionnement.html">fonctionnement du drakkar volant </a> </li>
+					<li> <a href="../../pages/effetsPositifs/effetsPositifs.html">effets bénéfiques du drakkar volant </a> </li>
+					<li> <a href="PimpMyDrakkar.html">Pimp My Drakkar </a> </li>
+				</menu>
+			</nav>
+		</header>
+		
+		<main>
+			<article>
+				<h1> Pimp My drakkar </h1>
+				
+				<!-- navigation interne de la page-->				
+				<nav id="navInt">
+					<ol>
+						<li><a href="#part1">Informations avant achat</a></li>
+						<li><a href="#part2">Exemple de bouclier</a></li>
+						<li><a href="#part3">Exemple de voiles</a></li>
+						<li><a href="#part4">Formulaire</a></li>
+					</ol>
+				</nav>
+				
+				<!-- Corps du texte-->
+				<section>
+					<h2 id="part1">Informations avant achat</h2>
+					<p>Attention! avant de pouvoir acheter un drakkar volant, nous devons vous expliquer quelques règles :</p>
+					
+					<ul>
+						<li>Vous devez avoir votre permis drakkar volant (que vous ne pouvez passez que chez nous, vu qu’on a le monopole).</li>
+						<li>Vous devez être majeur pour pouvoir passer le permis drakkar volant.</li>
+						<li>Vous devez prouver que vous apprécier la culture viking en passant un test écrit (si vous avez le permis mais que 
+						vous échouez à ce test, vous ne pourrez pas légalement conduire un drakkar volant).</li>
+						<li>Vous devrez nous prouver que vous êtes capable de vus mesurez à un dragon (soit en le combattant, soit en le dressant, 
+						ça c'est à vous de voir).</li>
+						<li>Si vous passez toutes ses épreuves, vous devrez participer à un banquet avec nous!</li>
+						
+					</ul>
+				</section>
+				
+				<section>
+					<h2 id="part2">Exemple de bouclier</h2>
+					
+					<p> Avant de remplir le formulaire de perosnnalisation du drakkar volant, voici quelques exemples de bouclier pour ornait votre 
+					drakkar:
+					</p>
+					
+					<figure>
+						<img src="img/motifBouclier.jpg" alt="images de bouclier pouvant se mettre sur le coté du drakkar">
+					</figure>
+					
+					
+				</section>
+				
+				<section>
+					<h2 id="part3">Exemple de voiles</h2>
+					
+					
+					<figure >
+						<img src="img/Voiles.jpg" alt="images de voiles pouvant se mettre sur le coté du drakkar">
+						
+					</figure>
+				</section>
+				
+				<section>
+					<h2 id="part4">Formulaire</h2>
+					
+					<form action="https://ensweb.users.info.unicaen.fr/tp/decouverte-formulaires/recup.php" method="POST">
+					
+						<fieldset>						
+							<legend>Informations personnelles</legend>
+							
+							<p>Civilité:
+								<br>
+								<label><input type="radio" value="h" name="sexe" required /> Homme</label>								
+								<label><input type="radio" value="f" name="sexe" required /> Femme</label>								
+								<label><input type="radio" value="a" name="sexe" required /> Autre</label>
+							</p>
+							
+							<p>Nom:
+								<input type="text" name="nom" placeholder="Dupont" required />
+							</p>
+							
+							<p>Prénom:
+								<input type="text" name="prénom" placeholder="Michel" required />
+							</p>
+							
+							<p>Âge:
+								<input type="number" name="age" min="18" max="120"  required />
+							</p>
+							
+							<p>Adresse:
+								<input type="text" name="adresse" placeholder="1 rue jean moulin 14000 Caen" required />
+							</p>
+							
+							<p>Email:
+								<input type="email" name="mail" placeholder="dupont.michel@gmail.com" required />
+							</p>
+							
+							<p>Téléphone:
+								<input type="tel" name="portable" placeholder="0123456789" minlength="10" maxlength="10" required />
+							</p>
+							
+							<p>Site web (optionnel):
+								<input type="url" name="site" placeholder="http://dupontmichel.com" />
+							</p>
+      
+						</fieldset>
+						
+						<fieldset>						
+							<legend>Personnalisation du Drakkar</legend>
+							
+							<p>Choix du bois:
+								<br>
+								<label><input type="radio" value="charme" name="bois" required /> Charme:apporte du charisme à votre bateau</label>
+								<br>
+								<label><input type="radio" value="if" name="bois" required /> If:le bois des développeur</label>
+								<br>
+								<label><input type="radio" value="frene" name="bois" required /> Frêne:idéal pour controler votre vitesse</label>
+							</p>
+							<p>Figure de proue:
+								<br>
+								<label><input type="radio" value="dragon" name="proue" required checked /> dragon (traditionnelle)</label>
+								<br>
+								<label><input type="radio" value="loup" name="proue" required /> loup</label>
+								<br>
+								<label><input type="radio" value="absence" name="proue" required /> pas de figure de proue</label>
+							</p>
+								
+							<p>Envoyez une image du motif de bouclier choisi:
+								<input type="file" name="bouclier" required />
+							</p>
+							
+							<p>Envoyez une image du motif de voile choisi:
+								<input type="file" name="voile" required />
+							</p>
+							
+						
+						</fieldset>
+						
+						<button type="submit">Envoyer votre commande!</button>
+					</form>
+				</section>
+				
+				<!-- fausse pub -->
+				<aside>
+					<img src="../../images/faussePub.png" alt="fausse pub qui va bien">
+				</aside>
+			</article>
+			
+			<!-- navigation entre page -->
+			<nav id="navP">
+				<a href="../../pages/effetsPositifs/effetsPositifs.html" id="gauche"> effets positifs </a>
+				<a href="../../index.html" id="droite">acceuil </a>
+			</nav>
+		</main>
+		
+		<footer>
+			<section>
+				<h3> source: </h3>
+				<p> motifs boucliers: http://img101.xooimage.com/views/3/b/7/08-4636e05.jpg/</p>
+				<p> motifs voiles: http://www.thinkstockphotos.fr/image/illustration-ensemble-de-viking-drakkars/186963032 </p>
+			</section>
+			
+			
+			<p>©Paul Lebranchu université Caen </p>
+			
+		</footer>
+		
+	</body>
+
+</html>

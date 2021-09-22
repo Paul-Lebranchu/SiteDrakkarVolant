@@ -1,0 +1,293 @@
+/****************************************************************/
+/*Gestion des gros blocs blocs: body puis header, main et footer*/
+
+/*gestion du body et du fond d'écran*/
+body{
+	background-image:url("img/For_Honor_Background_Viking.jpg");
+	background-repeat: no-repeat;
+	margin:100px;
+	background-size:100%;
+	background-attachment:fixed;
+	background-position:100%;
+	background-color:grey; 
+}
+
+/*gestion du header*/
+header{
+	display: grid;
+	grid-template-columns:1fr 3fr;
+	align-items:center;
+	max-width:65vw;
+	margin-right:auto;
+	margin-left:auto;
+	text-align:justify;
+}
+
+/* gestion de la taille du logo*/
+header figure img{
+	width:20vw;
+}
+
+/*position des paragraphes*/
+main{
+	max-width:45vw;
+	margin-right:auto;
+	margin-left:auto;
+	text-align:justify;
+}
+
+/*couleur des liens*/
+a{
+	color:#62000D;
+	text-decoration:none;
+}
+
+/*gestion vidéo*/
+video{
+	max-width:100%;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*gestion des images et légendes*/
+img{
+	max-width:100%;
+	display:block;
+	margin-left: auto; 
+	margin-right: auto;
+	transition:2s;
+	z-index:1;
+}
+	
+figcaption{
+	text-align:center;
+}
+
+/*couleur formulaire*/
+fieldset{
+	color:#62000D;
+	margin-top:70px;
+	border-color:#62000D;
+}
+
+/*gestion du footer*/
+
+footer{
+	font-size:70%;	
+	max-width:55vw;
+	margin-right:auto;
+	margin-left:auto;
+	text-align:justify;
+}
+/* fin de Gestion des gros blocs blocs: body puis header, main et footer*/
+/************************************************************************/
+
+
+
+/************************************************************************/
+/*****Gestion des trois systèmes de navigation systèmes de navigation****/
+
+
+/*organisation du menu*/
+
+menu{
+	display: grid;
+	grid-template-columns:8% 17% 30% 30% 15%;
+	border:5px double #62000D;
+	background-color: #F0DFE2;
+	justify-items:center;
+	align-items:center;
+	padding:30px;
+	grid-gap:5px;
+}
+
+menu li{
+	list-style-type:none;
+	text-align:center;
+}
+/*page précédente et sui vante en bas de page*/
+#navP{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	justify-items:center;
+}
+/*ajout de l'image des flèches pour la page précédante et la suivante*/
+
+#gauche{
+	background-image:url("img/arrowG.png");
+	background-repeat: no-repeat;
+	padding-bottom:40px;
+	background-position:left;
+	background-size:100%;
+}
+
+#droite{
+	background-image:url("img/arrowD.png");
+	background-repeat: no-repeat;
+	padding-bottom: 40px;
+	background-position:left;
+	background-size:100%;
+}
+
+/*gestion de la navigation interne*/
+#navInt{
+	display:inline-block;
+	border:5px double #62000D;
+	background-color: #F0DFE2;
+	grid-gap:5px;
+	padding:4px;
+}
+
+#navInt li{
+	
+	color:#62000D;
+	
+
+}
+
+/***** Fin Gestion des trois systèmes de navigation systèmes de navigation****/
+/************************************************************************/
+
+
+
+/**********************/
+/*gestion des polices*/
+
+/*ajout de police à la base de données*/
+
+@font-face {
+   font-family: "titre/nav";
+   src: url("font/Norsebold.otf");
+}
+
+@font-face {
+   font-family: "texte";
+   src: url("font/GRECOromanLubedWrestling.ttf");
+}
+
+/*gestion des polices des différents éléménts*/
+h1,h2,h3,nav{
+	font-family: "titre/nav",Arial, sans-serif;
+	color:#080254;
+	
+}
+
+h2::before{
+	content:url("img/Hachette_icon.png");
+	float:left;
+}
+
+p,figcaption,li{
+	font-family:"texte",Arial, sans-serif;
+	color:white;
+}
+
+main p::first-letter{
+	color:#62000D;
+	font-weight:bold;
+	font-size:200%;
+}
+/*fin de gestion des polices*/
+/****************************/
+
+
+
+/*************************************/
+/*position et taille de la fausse pub*/
+aside{
+	position:fixed;
+	width:10%;
+	left:10%;
+	top:25%;
+	box-shadow: 5px 5px black;
+	
+}
+/*fin position et taille de la fausse pub*/
+/*****************************************/
+
+
+
+/*************************/
+/*animations et transitions*/
+
+a:hover,h1:hover:hover,h2:hover,h3:hover{
+	text-shadow:1px 1px 2px black;
+	font-weight:bold;
+}
+
+img:active {
+	transform:scale(2);
+}
+
+aside img:hover{
+	transform:scale(1);
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+/*fin des animations et transitions*/
+/***********************************/
+
+
+/********************/
+/*responsive design*/
+
+
+/*format tablette*/
+
+@media (max-width: 900px) {
+	menu{display:grid;
+		grid-template-columns:1fr;}
+		
+	header{display:inline-block;
+	margin-right:25%;
+	margin-left:25%;
+	}
+	
+	/*le active devient un hover dans les formats inferieurs à 900px et inferieur à 400px (cf plus bas) pour que l'animation se déclenche également sur les téléphones et 
+	tablette*/
+	img:hover{
+	transform:scale(2);
+	}
+
+	aside img:hover{
+	transform:scale(1);
+	}
+	
+}
+/*formt téléphone*/
+@media (max-width: 400px) {
+	menu{display:grid;
+		grid-template-columns:1fr;
+	}
+	
+	header{display:inline-block;
+	margin-right:auto;
+	margin-left:auto;
+	}
+	
+	img:hover{
+	transform:scale(3.3);
+	}
+	
+	
+	
+	aside img:hover{
+	transform:scale(1);
+	}
+	
+	figcaption{
+		display:none;
+	}
+	
+	figure{
+		width:70%;
+	}	
+}
+	
+
+/*fin responsive design*/
+/***********************/
