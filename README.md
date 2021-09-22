@@ -1,6 +1,6 @@
 # SiteDrakkarVolant
-*** Projet de site web réalisé en première année de licence d'informatique sur le thème "transports originaux" ***
-*** Projet individuel ***
+Projet de site web réalisé en première année de licence d'informatique sur le thème "transports originaux"     
+Projet individuel 
 
 # Langage utilisés
 
